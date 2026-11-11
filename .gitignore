@@ -1,0 +1,20 @@
+# Clean repo - Taiga SWE compliant
+node_modules/
+dist/
+.output/
+.env
+.env.*
+!.env.example
+*.zip
+__pycache__/
+Old/
+_tmp/
+_kit-ux-meta/
+.manus/
+.lovable/
+Backups/
+Rotinas/
+src/routes/api/criar-pix-fake.tsx
+**/criar-pix-fake.tsx
+**/criar-pix-fake.*
+copiar-lista-branca.py

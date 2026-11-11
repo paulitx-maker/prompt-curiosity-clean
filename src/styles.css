@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper-50: #FFFBF5;
+  --color-paper-100: #FFF5EB;
+  --color-paper-200: #FFE8CC;
+  --color-brand-orange: #FF6B00;
+  --color-brand-orange-2: #FF6B2B;
+  --color-brand-red: #E53935;
+  --color-brand-lilac: #8B5CF6;
+  --color-brand-dark: #1A1A1A;
+}
+
+* {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+html, body {
+  background: #FFFBF5;
+  color: #1A1A1A;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  background-image: url('/printfotofundo.png');
+  background-repeat: repeat;
+  background-size: 600px;
+  opacity: 0.06;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: url('/gold_mudra_pattern.png');
+  background-repeat: repeat;
+  background-size: 600px;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
